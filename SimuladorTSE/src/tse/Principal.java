@@ -10,8 +10,8 @@ public class Principal {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Eleição acontecendo
-		List listaVotos = new ArrayList();
-		List listaJustificativas = new ArrayList();
+		List<Voto> listaVotos = new ArrayList<>();
+		List<Justificativa> listaJustificativas = new ArrayList<>();
 		System.out.println("Qual é a sua opção");
 		Scanner scanner = new Scanner(System.in);
 		int opcao = Integer.parseInt(scanner.nextLine());
