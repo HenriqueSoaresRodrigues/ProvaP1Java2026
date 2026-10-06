@@ -65,11 +65,14 @@ public class Principal {
 	}
 	public static void imprimirVotos() {
 		//imprimir os votos
-		for(int j = 1; j<candidatos.length; j++) {//Porque -1 não é voto válido
+		for(int j = 0; j<candidatos.length; j++) {//Porque -1 não é voto válido
 			if(candidatos[j]==-1) {
 				System.out.println("Houveram "+votosRegistrados[j]+" votos nulos");
 			}
-			System.out.println("O candidato "+candidatos[j]+" obteve "+votosRegistrados[j]+" votos");
+			else {
+				System.out.println("O candidato "+candidatos[j]+" obteve "+votosRegistrados[j]+" votos");
+			}
+			
 		}
 	}
 	public static void definirResultado() {
